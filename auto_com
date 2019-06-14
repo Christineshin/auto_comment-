@@ -1,0 +1,59 @@
+var content = 'xxxxxx这两个双引号中间的这些x和汉子替换成自己要评价的内容xxxxxx';
+function a(){
+  var close=document.getElementsByClassName('btn-9 fail-close');
+  if(close.length>0){
+         close[0].click()}
+         var assess=document.getElementsByClassName('btn-9')[0];
+           if(assess!=null){
+           for(var i=0;i<2;i++){assess.click();
+           var area=document.getElementsByClassName('area area01')[0];
+           area.value=content;
+           area.setAttribute('id','id'+0);
+           $('#id'+0).blur();
+           var star=document.getElementsByClassName('star4')[0];
+           star.click()}
+        var submit=document.getElementsByClassName('btn-5 mr10 setcomment')[0];    #define class from loading comment
+        submit.click();
+setTimeout('a()',5000)}
+};
+a();
+
+
+
+# loading img _addition
+
+var time;
+function a() {
+	var close = document.getElementsByClassName('btn-9');
+	if (close.length > 0) {
+		close[0].click()
+		var imgs = document.getElementsByName('imgs1')[0];
+		if (imgs != null) {
+			imgs.value = "//img30.360buyimg.com/shaidan/jfs/t6565/276/1439852732/41507/d7dc6d5e/59522c69N31c33f50.jpg";
+			var submit = document.getElementsByClassName('btn-5 mr10 setcomment')[0];
+			submit.click();
+			time = setTimeout('a()', 5000)
+		}
+	} else {
+		clearTimeout(time);
+	}
+};
+a();
+
+
+
+#labelling satisfactory ranking 
+$('.commstar').find('.star5').addClass('active');
+
+# add comment
+$('textarea').text('comment text');
+
+# first attributes
+$.each($('.m-tagbox.m-multi-tag')),function(){
+        var $this = $(this);
+        $($this.find('a')[0]).addClass('tag-checked');
+});
+
+# submit comment 
+$('.btn-submit').click();
+
